@@ -15,8 +15,8 @@ public class TerrainMap extends JPanel {
     private int worldWidth, worldHeight;
     private int cellSize = 5;
     private Color[] colors = {
-            Color.BLACK, Color.GRAY, new Color(1, 107, 1),  Color.GREEN, Color.BLUE,
-            new Color(0, 0, 170), Color.WHITE
+            Color.BLACK, Color.GRAY, new Color(1, 107, 1),
+            Color.GREEN, Color.BLUE, new Color(0, 0, 170), Color.WHITE
     };
     private int types = 7;
     private int[][] notAllowed = {
@@ -105,14 +105,5 @@ public class TerrainMap extends JPanel {
         }
 
         return conflicts;
-    }
-
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Procedural Terrain Map");
-        TerrainMap terrainMap = new TerrainMap(800, 800);
-        frame.add(terrainMap);
-        frame.pack();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
     }
 }
