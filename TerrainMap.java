@@ -125,6 +125,7 @@ class TerrainMap extends JPanel {
 
     /**
      * checks for conflicts around the specified cell
+     *
      * @param x x coordinate of cell
      * @param y y coordinate of cell
      * @param type terrain type of cell
